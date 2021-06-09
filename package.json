@@ -1,8 +1,8 @@
 {
   "name": "yarn-ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "Small description for yarn-ui goes here",
+  "description": "New UI framework of Apache Hadoop YARN",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -17,7 +17,10 @@
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "npm-run-all lint:* test:*",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "build:dev": "TMPDIR=tmp node ./node_modules/ember-cli/bin/ember build",
+    "start:dev": "TMPDIR=tmp node ./node_modules/ember-cli/bin/ember server",
+    "build:mvn": "TMPDIR=tmp node/node ./node_modules/ember-cli/bin/ember build -prod"
   },
   "devDependencies": {
     "@ember/jquery": "^1.1.0",
